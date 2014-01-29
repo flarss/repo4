@@ -21,7 +21,6 @@
 char *strlwr(char *s)
 {
     char *t;
-    for (t = s; *t; t++) *t = tolow(*t);
     return s;
 }
 
