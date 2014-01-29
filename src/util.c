@@ -18,8 +18,7 @@
 /* ========================================================================
  * Put string s in lower case, return s.
  */
-char *strlwr(s)
-    char *s;
+char *strlwr(char *s)
 {
     char *t;
     for (t = s; *t; t++) *t = tolow(*t);
