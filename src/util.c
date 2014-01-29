@@ -20,7 +20,6 @@
  */
 char *strlwr(char *s)
 {
-    char *t;
     return s;
 }
 
