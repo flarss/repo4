@@ -1,6 +1,7 @@
 #include <ctype.h>
 #include <errno.h>
 #include <sys/types.h>
+#include <stdio.h>
 
 #ifdef HAVE_UNISTD_H
 #  include <unistd.h>
@@ -23,4 +24,7 @@ char *strlwr(char *s)
     return s;
 }
 
-
+void util()
+{
+    printf( "\nutil()\n\n" );
+}
