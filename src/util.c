@@ -26,5 +26,5 @@ char *strlwr(char *s)
 
 void util()
 {
-    printf( "\nutil()\n\n" );
+    printf( "util()\n" );
 }
