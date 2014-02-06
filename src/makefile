@@ -11,5 +11,6 @@ util.o: util.c
 
 clean:
 	rm -rf *o hello
+	rm -rf *~
 
 
