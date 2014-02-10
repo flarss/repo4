@@ -1,6 +1,6 @@
 all: hello
 
-hello: main.o util.o foo.o
+hello: main.o util.o
 	g++ main.o util.o foo.o -o hello
 
 main.o: main.c
