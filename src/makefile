@@ -1,15 +1,20 @@
-all: hello
+CC=g++
+CFLAGS=-c -Wall
+LDFLAGS=
+SOURCES=main.c util.c foo.c
+OBJECTS=$(SOURCES:.c=.o)
+EXECUTABLE=hello
 
-hello: main.o util.o
-	g++ main.o util.o -o hello
+all: $(SOURCES) $(EXECUTABLE)
 
-main.o: main.c
-	g++ -c main.c
+$(EXECUTABLE): $(OBJECTS) 
+	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 
-util.o: util.c
-	g++ -c util.c
+.cpp.o:
+	$(CC) $(CFLAGS) $< -o $@
 
 clean:
 	rm -rf *o hello
+	rm -rf *~
 
 
