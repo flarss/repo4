@@ -10,5 +10,7 @@ int main( int argc, const char* argv[] )
 	util();	
 	exit(1);
 	foo();	
+	printf( "task 18974\n" );
+
 }
 

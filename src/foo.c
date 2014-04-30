@@ -3,5 +3,5 @@
 
 void foo()
 {
-    printf( "foo() was here\n" );
+    printf( "foo() was here, again...\n" );
 }
